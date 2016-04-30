@@ -11,9 +11,9 @@
     (println "Render Landing")
     (dom/div nil
              (dom/p nil "Landing page"
-                    (dom/a #js {:href "/potato"} "LINKYT"))
+                    (dom/a #js {:href "/potato"} "POTATO"))
              (dom/p nil "Landing page"
-                    (dom/a #js {:href "/"} "LINKY"))
+                    (dom/a #js {:href "/"} "ROOT"))
              (dom/p nil (str (-> this om/props :navigation-data))))))
 
 
@@ -39,7 +39,7 @@
     '[(:search/results {:query ?query})])
   Object
   (componentWillMount [this]
-    (om/set-query! this {:params {:query "Dimiter"}}))
+    (om/set-query! this {:params {:query "Dimiters"}}))
   (render [this]
     (println (om/props this))
     (println (om/tempid))
