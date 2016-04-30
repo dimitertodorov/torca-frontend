@@ -1,0 +1,4 @@
+{:require          [torcaui-devcards.core]
+ :compiler-options {:devcards true
+                    :asset-path "/devcards.out"}
+ :init-fns         [torcaui-devcards.core/main]}

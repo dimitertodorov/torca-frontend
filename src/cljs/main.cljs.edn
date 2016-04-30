@@ -1,0 +1,3 @@
+{:require  [torcaui.core]
+ :compiler-options {:asset-path "/main.out"}
+ :init-fns [torcaui.core/setup!]}
